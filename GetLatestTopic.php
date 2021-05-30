@@ -27,12 +27,14 @@ for ($i = 0;$i < count($topic_list);$i++)
         "\n",
         "\r"
     ) , '', $topic_list_type[$i]->textContent);
+    $i2 = intval($i) + 1;
     $info[$i]->topic_link = "https://hentaivn.tv" . $finder->evaluate("string(//tbody[@class='statused'][1]//tr[2]//td[@class='double']//ol[@class='olList']//li[@class='link_visit'][" . ($i + 1) . "]//a/@href)");
     $topicName = str_replace(array(
         "\n",
         "\r"
     ) , '', $topic_list[$i]->textContent);
     $info[$i]->topic_name = substr($topicName, strlen($info[$i]->topic_type) + 1);
+	$info[$i]->topic_last_reply = str_replace(array("\n", "\r"), '', $finder->query("//tbody[@class='statused'][1]//tr[2]//td[@class='double']//ol[@class='olList']//li[@class='link_visit'][" . $i2 . "]//a[@class='lastRight']//span//strong")[0]->textContent);
 }
 // Return JSON object
 echo json_encode($info);

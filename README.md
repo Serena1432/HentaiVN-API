@@ -959,60 +959,71 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 | `topic_type` | `string` | The topic type. |
 | `topic_link` | `string` | The link leading to that HentaiVN Forum Topic. |
 | `topic_name` | `string` | The topic name. |
+| `topic_last_reply` | `string` | The topic's last replied user. |
 
 **Response Examples:**
 (Executed by my computer on May 30, 2021; 5:10 PM (GMT+7))
 ```json
 [
   {
-    "topic_type": "Bounty",
-    "topic_link": "https://hentaivn.tv/forum/t47681-seisai-ryoku-no-takai-7.html#196",
-    "topic_name": "Seisai-ryoku no Takai 7"
-  },
-  {
-    "topic_type": "Tìm truyện",
-    "topic_link": "https://hentaivn.tv/forum/t47680-tan-the.html#710",
-    "topic_name": "Tận thế!"
-  },
-  {
-    "topic_type": "Danh Hiệu",
-    "topic_link": "https://hentaivn.tv/forum/t42076-trao-tang-danh-hieu-bbcon-cho-akai.html#980",
-    "topic_name": "Trao tặng Danh Hiệu \"BBcon\" cho Akai"
+    "topic_type": "Báo cáo",
+    "topic_link": "https://hentaivn.tv/forum/t47686-to-cao-thanh-vien-.html#428",
+    "topic_name": "Tố cáo thành viên",
+    "topic_last_reply": "vó ngựa thảo nguyên"
   },
   {
     "topic_type": "Thảo luận",
-    "topic_link": "https://hentaivn.tv/forum/t47668-ngung-dang-anh-18--de-hentaivn-khong-bi-chan.html#341",
-    "topic_name": "Ngừng Đăng Ảnh 18+ Để HentaiVN Không Bị Chặn!"
+    "topic_link": "https://hentaivn.tv/forum/t47668-ngung-dang-anh-18--de-hentaivn-khong-bi-chan.html#304",
+    "topic_name": "Ngừng Đăng Ảnh 18+ Để HentaiVN Không Bị Chặn!",
+    "topic_last_reply": "user-221715"
   },
   {
-    "topic_type": "Waifu",
-    "topic_link": "https://hentaivn.tv/forum/t47679-ban-trung-xanh-sieu-dep-re-hon-lan-trc-toi-400-yen-.html#487",
-    "topic_name": "Bán trứng xanh siêu đẹp, rẻ hơn lần trc tới 400 yên"
-  },
-  {
-    "topic_type": "Hình Ảnh 18+",
-    "topic_link": "https://hentaivn.tv/forum/t40466-xa-kho-part-2-.html#619",
-    "topic_name": "Xả kho part 2"
+    "topic_type": "Thảo luận",
+    "topic_link": "https://hentaivn.tv/forum/t47688-dich-truyen-co-phi.html#216",
+    "topic_name": "Dịch truyện có phí",
+    "topic_last_reply": "❀ Tuệ An ❀"
   },
   {
     "topic_type": "Mua bán/Hợp tác",
-    "topic_link": "https://hentaivn.tv/forum/t47662-can-editor-pzo.html#653",
-    "topic_name": "cần editor pzo"
+    "topic_link": "https://hentaivn.tv/forum/t47690-mua-6k-yen.html#162",
+    "topic_name": "Mua 6k yên",
+    "topic_last_reply": "❀ Tuệ An ❀"
   },
   {
-    "topic_type": "Hình Ảnh 18+",
-    "topic_link": "https://hentaivn.tv/forum/t46341-lan-dau-gop-vui-cho-anh-em.html#507",
-    "topic_name": "Lần đầu góp vui cho anh em"
+    "topic_type": "Mua bán/Hợp tác",
+    "topic_link": "https://hentaivn.tv/forum/t47662-can-editor-pzo.html#915",
+    "topic_name": "cần editor pzo",
+    "topic_last_reply": "RienV"
   },
   {
-    "topic_type": "Bounty",
-    "topic_link": "https://hentaivn.tv/forum/t46975-chinpou-ni-ai-o-komete.html#430",
-    "topic_name": "Chinpou ni Ai o Komete"
+    "topic_type": "Hỏi đáp",
+    "topic_link": "https://hentaivn.tv/forum/t47687-lam-sao-de-kiem-yen-a.html#853",
+    "topic_name": "Làm sao để kiếm yên ạ",
+    "topic_last_reply": "Mellie Nataniel"
   },
   {
-    "topic_type": "Hình Ảnh 18+",
-    "topic_link": "https://hentaivn.tv/forum/t47558-bac-nao-co-may-anh-chay-nuoc-giong-kia-thi-cho-tui-voi.html#299",
-    "topic_name": "Bác nào có mấy ảnh chảy nước giống kia thì cho tụi với"
+    "topic_type": "Mua bán/Hợp tác",
+    "topic_link": "https://hentaivn.tv/forum/t44183-ban-yen-sang-card-vina.html#716",
+    "topic_name": "BÁN YÊN SỐ LƯỢNG LỚN",
+    "topic_last_reply": "Zerotwo"
+  },
+  {
+    "topic_type": "Mua bán/Hợp tác",
+    "topic_link": "https://hentaivn.tv/forum/t47518-ban-yen-giao-dich-qua-momo.html#440",
+    "topic_name": "Bán yên giao dịch qua momo",
+    "topic_last_reply": "Zerotwo"
+  },
+  {
+    "topic_type": "Nhờ dịch free",
+    "topic_link": "https://hentaivn.tv/forum/t47689-nho-dich-truyen.html#022",
+    "topic_name": "Nhờ dịch truyện",
+    "topic_last_reply": "Donald Trump"
+  },
+  {
+    "topic_type": "Tìm truyện",
+    "topic_link": "https://hentaivn.tv/forum/t45196-tim-truyen-ngot-.html#587",
+    "topic_name": "Tìm truyện ngọt....",
+    "topic_last_reply": "zukitata03"
   }
 ]
 ```
