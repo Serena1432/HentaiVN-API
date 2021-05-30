@@ -279,9 +279,298 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 }
 ```
 
+### /GET `GetCharacterInfo.php`
+
+**Description:** Get the full information of a character.
+
+**Request Parameters:** JSON, form-urlencoded or queries from URL contains this parameter:
+| Parameter | Type | Optional | Description |
+| --- | --- | --- | --- |
+| `name` | `string` | No | The character name you want to get information |
+| `page` | `string/integer` | Yes | The page number you want to get comics |
+
+**Response Parameters:** An JSON object containing character information
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `error` | `string` | The API error (`undefined` if none) |
+| `display_name` | `string` | The character's display name. |
+| `comics` | `array(object)` | The comic list array. |
+| `comics.comic_name` | `string` | The comic name. |
+| `comics.comic_link` | `string` | The link leading to the comic. |
+| `comics.tags` | `array(string)` | Array list of the comic tags. |
+
+**Response Examples:**
+(Executed with this parameter: `name=Nico Yazawa`)
+```json
+{
+  "display_name": "Nico Yazawa",
+  "comics": [
+    {
+      "tags": [
+        "Breast Sucking",
+        "Cunnilingus",
+        "Doujinshi",
+        "HentaiVN",
+        "Oneshot",
+        "Romance",
+        "Vanilla",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/22812-doc-truyen-watashi-no-kuroi-bara-no-hime.html",
+      "comic_name": "Watashi no Kuroi Bara no Hime - Oneshot"
+    },
+    {
+      "tags": [
+        "Doujinshi",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/16329-doc-truyen-maki-chan-ga-otoire-o-gaman-suru-ohanashi.html",
+      "comic_name": "Maki-chan ga Otoire o Gaman suru Ohanashi - Oneshot"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Cheating",
+        "Có che",
+        "Doujinshi",
+        "Fingering",
+        "Idol",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Rape",
+        "Sex Toys",
+        "Small Boobs",
+        "Stockings"
+      ],
+      "comic_link": "https://hentaivn.tv/15925-doc-truyen-nico-joku-love-live.html",
+      "comic_name": "Nico Joku (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Anal",
+        "BlowJobs",
+        "Cosplay",
+        "Doujinshi",
+        "Fingering",
+        "Full Color",
+        "Harem",
+        "HentaiVN",
+        "Idol",
+        "Không che",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Oral",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Swimsuit"
+      ],
+      "comic_link": "https://hentaivn.tv/14868-doc-truyen-ki-nghi-he-cua-nico-va-maki-love-live.html",
+      "comic_name": "Kì nghỉ hè của Nico và Maki (Love Live!) - Oneshot (Full-Màu)"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "BlowJobs",
+        "Che ít",
+        "Doujinshi",
+        "Group",
+        "Loli",
+        "Mind Control",
+        "Nakadashi",
+        "Oneshot",
+        "Rape",
+        "Small Boobs",
+        "Stockings",
+        "Virgin"
+      ],
+      "comic_link": "https://hentaivn.tv/13920-doc-truyen-nico-live-love-live.html",
+      "comic_name": "Nico-Live! (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Comedy",
+        "Doujinshi",
+        "Fingering",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/13729-doc-truyen-heart-throbbing-conversation-love-live.html",
+      "comic_name": "Heart Throbbing Conversation (Love Live!) - OneShot"
+    },
+    {
+      "tags": [
+        "Doujinshi",
+        "Oneshot",
+        "Romance",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/13616-doc-truyen-baby-i-love-you-love-live.html",
+      "comic_name": "BABY I LOVE YOU (Love Live!) - OneShot"
+    },
+    {
+      "tags": [
+        "Big Boobs",
+        "Bloomers",
+        "BlowJobs",
+        "Có che",
+        "Doujinshi",
+        "Group",
+        "Handjob",
+        "Harem",
+        "Mind Control",
+        "Nakadashi",
+        "School Uniform",
+        "SchoolGirl",
+        "Series",
+        "Small Boobs",
+        "Stockings",
+        "Swimsuit"
+      ],
+      "comic_link": "https://hentaivn.tv/13012-doc-truyen-ore-yome-saimin-love-live.html",
+      "comic_name": "Ore Yome Saimin (Love Live!) - Update Chap 3"
+    },
+    {
+      "tags": [
+        "Animal girl",
+        "Che ít",
+        "Che nhiều",
+        "Comedy",
+        "Doujinshi",
+        "Group",
+        "Oneshot",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/12679-doc-truyen-halloween-wonderland-love-live.html",
+      "comic_name": "Halloween Wonderland (Love Live!) - One-shot"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Che ít",
+        "Doujinshi",
+        "Femdom",
+        "Group",
+        "Harem",
+        "Idol",
+        "Loli",
+        "Oneshot",
+        "School Uniform",
+        "Sex Toys",
+        "Stockings"
+      ],
+      "comic_link": "https://hentaivn.tv/9280-doc-truyen-first-live-love-live.html",
+      "comic_name": "First Live (Love Live!) - Oneshot [Re-up]"
+    },
+    {
+      "tags": [
+        "Big Boobs",
+        "Che ít",
+        "Doujinshi",
+        "Fingering",
+        "HentaiVN",
+        "Idol",
+        "Masturbation",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Stockings",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/10108-doc-truyen-love-white-love-live.html",
+      "comic_name": "Love White (Love Live!) - One shot- [Yuri]"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Doujinshi",
+        "Fingering",
+        "Group",
+        "HentaiVN",
+        "Idol",
+        "Loli",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/9545-doc-truyen-nicomaki-triangle-revenge-love-live.html",
+      "comic_name": "NicoMaki Triangle Revenge (Love Live!) - One shot- [Yuri]"
+    },
+    {
+      "tags": [
+        "Che nhiều",
+        "Doujinshi",
+        "Fingering",
+        "HentaiVN",
+        "Idol",
+        "Loli",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Stockings",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/9072-doc-truyen-nicomaki-kanshou-party-love-live.html",
+      "comic_name": "NicoMaki Kanshou Party (Love Live!) - Oneshot [Yuri]"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Doujinshi",
+        "Full Color",
+        "HentaiVN",
+        "Idol",
+        "Loli",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Sex Toys",
+        "Small Boobs",
+        "Stockings",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/9023-doc-truyen-endless-love-kako-kara-no-present-love-live.html",
+      "comic_name": "Endless Love ~Kako Kara no Present~ (Love Live!) - One shot- [Yuri]"
+    },
+    {
+      "tags": [
+        "Catgirls",
+        "Che nhiều",
+        "Doujinshi",
+        "Fingering",
+        "HentaiVN",
+        "Idol",
+        "Loli",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Stockings",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/8997-doc-truyen-nico-maki-nyan-nyan-hon-love-live.html",
+      "comic_name": "Nico Maki Nyan Nyan Hon (Love Live!) - One shot- [Yuri]"
+    }
+  ]
+}
+```
+
 ### /GET `GetDoujinshiInfo.php`
 
-**Description:** Get the full information of an doujinshi.
+**Description:** Get the full information of a doujinshi.
 
 **Request Parameters:** JSON, form-urlencoded or queries from URL contains this parameter:
 | Parameter | Type | Optional | Description |
