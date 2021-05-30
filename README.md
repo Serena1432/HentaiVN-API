@@ -13,7 +13,7 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 
 ### /GET `GetFullUserInfo.php`
 
-**Description:** Get the information of an user.
+**Description:** Get the full information of an user.
 
 **Request Parameters:** JSON, form-urlencoded or queries from URL contains this parameter:
 | Parameter | Type | Description |
