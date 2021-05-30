@@ -10,4 +10,10 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 * PHP v7 or lower (Running on PHP v8 may cause some fatal errors).
 
 ## Documentation
-Coming soon...
+### /GET `GetLatestComic.php`
+**Request Parameters:** None
+**Response Parameters:** An JSON array object containing comic list.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `comic_link` | `string` | The link leading to the HentaiVN Comic URL. |
+| `comic_name` | `string` | The comic name. |
