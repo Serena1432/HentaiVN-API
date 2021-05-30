@@ -10,6 +10,56 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 * PHP v7 or lower (Running on PHP v8 may cause some fatal errors).
 
 ## Documentation
+
+### /GET `GetLatestComic.php`
+
+**Description:** Get 10 latest comics from the website.
+
+**Request Parameters:** JSON, form-urlencoded or queries from URL contains this parameter:
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `id` | `string` | The user ID you want to get information |
+
+**Response Parameters:** An JSON object containing user information
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `error` | `string` | The API error (`undefined` if none) |
+| `display_name` | `string` | The user's display name. |
+| `avatar` | `string` | The user's avatar URL. |
+| `additional_information` | `string` | The user's additional information. |
+| `group` | `string` | The user's joined group (`none` if none). |
+| `gender` | `string` | The user's gender. |
+| `birth_date` | `string` | The user's birth date. |
+| `joined` | `string` | The user's joined date. |
+| `comments` | `integer` | The user's posted comments. |
+| `likes` | `integer` | The user's received likes. |
+| `yen` | `integer` | The user's current Yen currency. |
+| `introduction` | `string` | The user's introduction. |
+| `latest_comic` | `string` | The user's latest comic (`false` if none). |
+| `tags` | `string` | The user's latest comic's tag (`undefined` if none). |
+| `comic_link` | `string` | The link leading to user's latest comic (`undefined` if none). |
+
+**Response Examples:**
+(Executed with this parameter: `id=108808`)
+```json
+{
+  "display_name": "Nico Levianth",
+  "avatar": "https://i.postimg.cc/RCfX75Gq/ezgif-6-f1553896d410.gif",
+  "additional_info": "\nNico Levianth\nCuồng Dâm\nBắt đầu bộc lộ bản chất dâm tà của mình.\n",
+  "group": "none",
+  "gender": "Nam",
+  "birth_date": "20/2/2005",
+  "joined": "01:18 - 17/05/2018",
+  "comments": 1383,
+  "likes": 2674,
+  "yen": 1811,
+  "introduction": "\n\n\n",
+  "latest_comic": "Watashi ni XXX ga Haete Kita! (Watashi ni Tenshi ga Maiorita!) - Oneshot [Loli]",
+  "tags": "Catgirls, Doujinshi, Full Color, Futanari, Incest, Không che, Loli, Oneshot, Swimsuit, Yuri",
+  "comic_link": "https://hentaivn.tv/19035-doc-truyen-watashi-ni-xxx-ga-haete-kita-watashi-ni-tenshi-ga-maiorita.html"
+}
+```
+
 ### /GET `GetLatestComic.php`
 
 **Description:** Get 10 latest comics from the website.
