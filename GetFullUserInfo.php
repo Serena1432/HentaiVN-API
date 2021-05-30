@@ -38,9 +38,9 @@ if ($_GET["id"])
             $info->gender = $infoData[1]->textContent;
             $info->birth_date = $infoData[2]->textContent;
             $info->joined = $infoData[3]->textContent;
-            $info->comments = $infoData[4]->textContent;
-            $info->likes = $infoData[5]->textContent;
-            $info->yen = $infoData[6]->textContent;
+            $info->comments = intval($infoData[4]->textContent);
+            $info->likes = intval($infoData[5]->textContent);
+            $info->yen = intval($infoData[6]->textContent);
             $info->introduction = $infoData[8]->textContent;
         }
         else
@@ -49,9 +49,9 @@ if ($_GET["id"])
             $info->gender = $infoData[0]->textContent;
             $info->birth_date = $infoData[1]->textContent;
             $info->joined = $infoData[2]->textContent;
-            $info->comments = $infoData[3]->textContent;
-            $info->likes = $infoData[4]->textContent;
-            $info->yen = $infoData[5]->textContent;
+            $info->comments = intval($infoData[3]->textContent);
+            $info->likes = intval($infoData[4]->textContent);
+            $info->yen = intval($infoData[5]->textContent);
             $info->introduction = $infoData[7]->textContent;
         }
         $content = $finder->query("//*[contains(@class, 'item remove_')][1]//div[contains(@class, 'box-description')][1]");
