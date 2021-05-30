@@ -11,6 +11,274 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 
 ## Documentation
 
+### /GET `GetAuthorInfo.php`
+
+**Description:** Get the full information of an author.
+
+**Request Parameters:** JSON, form-urlencoded or queries from URL contains this parameter:
+| Parameter | Type | Optional | Description |
+| --- | --- | --- | --- |
+| `name` | `string` | No | The author name you want to get information |
+| `page` | `string/integer` | Yes | The page number you want to get comics |
+
+**Response Parameters:** An JSON object containing author information
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `error` | `string` | The API error (`undefined` if none) |
+| `display_name` | `string` | The author's display name. |
+| `comics` | `array(object)` | The comic list array. |
+| `comics.comic_name` | `string` | The comic name. |
+| `comics.comic_link` | `string` | The link leading to the comic. |
+| `comics.tags` | `array(string)` | Array list of the comic tags. |
+
+**Response Examples:**
+(Executed with this parameter: `name=Tamano Kedama`)
+```json
+{
+  "display_name": "Tamano Kedama",
+  "comics": [
+    {
+      "tags": [
+        "BlowJobs",
+        "Breast Sucking",
+        "DevilGirl",
+        "Femdom",
+        "Không che",
+        "Loli",
+        "Nakadashi",
+        "Series",
+        "Small Boobs",
+        "Stockings",
+        "X-ray"
+      ],
+      "comic_link": "https://hentaivn.tv/23952-doc-truyen-no-le-cua-tieu-succubus.html",
+      "comic_name": "Nô Lệ Của Tiểu Succubus - Chap 2 [Không Che!]"
+    },
+    {
+      "tags": [
+        "HentaiVN",
+        "Không che",
+        "Loli",
+        "Oneshot",
+        "Small Boobs",
+        "Twintails",
+        "Vanilla"
+      ],
+      "comic_link": "https://hentaivn.tv/22850-doc-truyen-papakatsu-de-deatta-ko-ga-inma-kamo-shirenai.html",
+      "comic_name": "Papakatsu de Deatta Ko ga Inma kamo Shirenai - Oneshot (Không che)"
+    },
+    {
+      "tags": [
+        "BlowJobs",
+        "Che nhiều",
+        "DevilGirl",
+        "Femdom",
+        "Humiliation",
+        "Loli",
+        "Nakadashi",
+        "Small Boobs",
+        "Stockings"
+      ],
+      "comic_link": "https://hentaivn.tv/14312-doc-truyen-chu-chu-drain.html",
+      "comic_name": "Chu Chu Drain - Mang series quay lại"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "BlowJobs",
+        "Breast Sucking",
+        "Dark Skin",
+        "Demon",
+        "DemonGirl",
+        "Fantasy",
+        "Femdom",
+        "Full Color",
+        "Group",
+        "HentaiVN",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Romance",
+        "Small Boobs",
+        "Twintails",
+        "X-ray"
+      ],
+      "comic_link": "https://hentaivn.tv/21280-doc-truyen-suoi-nuoc-nong-lilith.html",
+      "comic_name": "Suối nước nóng Lilith - Oneshot full màu Art phê"
+    },
+    {
+      "tags": [
+        "Big Boobs",
+        "Big Penis",
+        "BlowJobs",
+        "Breast Sucking",
+        "Comedy",
+        "Ecchi",
+        "Không che",
+        "Old Man",
+        "Oneshot",
+        "Romance",
+        "School Uniform",
+        "SchoolGirl",
+        "Teacher",
+        "Tsundere",
+        "Vanilla"
+      ],
+      "comic_link": "https://hentaivn.tv/20070-doc-truyen-school-regulation-violation.html",
+      "comic_name": "School Regulation Violation - Oneshot Không che"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Che ít",
+        "Có che",
+        "DogGirl",
+        "Doujinshi",
+        "Garter Belts",
+        "Loli",
+        "Mind Control",
+        "Nakadashi",
+        "Oneshot",
+        "Sex Toys",
+        "Small Boobs",
+        "Stockings"
+      ],
+      "comic_link": "https://hentaivn.tv/17981-doc-truyen-majo-no-watashi-ga-saimin-nanka-ni-kakaru-wake-nai-desho-touhou-project.html",
+      "comic_name": "Majo no Watashi ga Saimin nanka ni Kakaru wake Nai desho (Touhou Project) - Rì úp"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Có che",
+        "Doujinshi",
+        "HentaiVN",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Small Boobs"
+      ],
+      "comic_link": "https://hentaivn.tv/18381-doc-truyen-con-sot-39-do-touhou-touhou-project.html",
+      "comic_name": "Cơn Sốt 39 Độ (Touhou, Touhou Project) - Oneshot"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Có che",
+        "Doujinshi",
+        "Garter Belts",
+        "HentaiVN",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "X-ray"
+      ],
+      "comic_link": "https://hentaivn.tv/18329-doc-truyen-karakuchi-patchouli-sama-touhou-touhou-project.html",
+      "comic_name": "Karakuchi Patchouli-sama (Touhou, Touhou project) - Oneshot"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Doujinshi",
+        "HentaiVN",
+        "Loli",
+        "Oneshot",
+        "Vampire",
+        "Vanilla"
+      ],
+      "comic_link": "https://hentaivn.tv/18055-doc-truyen-dit-xoa-diu-be-flan-chan-de-thuong-touhou-project.html",
+      "comic_name": "Địt xoa dịu bé Flan-chan dễ thương (Touhou Project) - Oneshot ngọt"
+    },
+    {
+      "tags": [
+        "BlowJobs",
+        "DevilGirl",
+        "Full Color",
+        "Handjob",
+        "HentaiVN",
+        "Không che",
+        "Loli",
+        "Oneshot",
+        "Pregnant",
+        "Twintails"
+      ],
+      "comic_link": "https://hentaivn.tv/15927-doc-truyen-kedama-gyuunyuu-succubus.html",
+      "comic_name": "Kedama Gyuunyuu [Succubus] - Oneshot (Full Màu + Không Che)"
+    },
+    {
+      "tags": [
+        "Có che",
+        "Doujinshi",
+        "Loli",
+        "Oneshot",
+        "Romance",
+        "Small Boobs",
+        "Vanilla"
+      ],
+      "comic_link": "https://hentaivn.tv/14720-doc-truyen-erudo-ecchi-azur-lane.html",
+      "comic_name": "Erudo Ecchi (Azur Lane) - Oneshot"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Doujinshi",
+        "HentaiVN",
+        "Loli",
+        "Oneshot",
+        "Romance",
+        "Small Boobs",
+        "Stockings",
+        "Vanilla"
+      ],
+      "comic_link": "https://hentaivn.tv/14681-doc-truyen-eld-marriage-azur-lane.html",
+      "comic_name": "Eld Marriage (Azur Lane) - Oneshot"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Doujinshi",
+        "Loli",
+        "Oneshot",
+        "Romance",
+        "Small Boobs",
+        "Vanilla"
+      ],
+      "comic_link": "https://hentaivn.tv/14624-doc-truyen-eld-marriage-azur-lane.html",
+      "comic_name": "Eld Marriage (Azur Lane) - Oneshot"
+    },
+    {
+      "tags": [
+        "Big Ass",
+        "Big Boobs",
+        "Catgirls",
+        "Cosplay",
+        "Fingering",
+        "Không che",
+        "Nakadashi",
+        "Oneshot",
+        "Romance",
+        "Stockings",
+        "Vanilla",
+        "X-ray"
+      ],
+      "comic_link": "https://hentaivn.tv/12600-doc-truyen-tama-cau-xin-anh-di.html",
+      "comic_name": "Tama! Cầu xin anh đi! - Oneshot [Không Che]"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Doujinshi",
+        "Loli",
+        "Oneshot",
+        "Small Boobs",
+        "Vampire"
+      ],
+      "comic_link": "https://hentaivn.tv/12258-doc-truyen-flanex-touhou-project.html",
+      "comic_name": "FLANEX (Touhou Project) - Oneshot"
+    }
+  ]
+}
+```
+
 ### /GET `GetFullUserInfo.php`
 
 **Description:** Get the full information of an user.
