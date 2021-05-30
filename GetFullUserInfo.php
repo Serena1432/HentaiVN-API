@@ -21,9 +21,9 @@ if ($_GET["id"])
     $finder = new DomXPath($doc);
     // Process HTML contents to objects
     $nodes = $finder->query("//*[contains(@class, 'wall-name')]//h2");
-    $info->displayName = $nodes[0]->textContent;
+    $info->display_name = $nodes[0]->textContent;
     // Check if user is valid
-    if ($info->displayName == null) echo '{"error": "Invalid user"}';
+    if ($info->display_name == null) echo '{"error": "Invalid user"}';
     else
     {
         // Get user avatar
