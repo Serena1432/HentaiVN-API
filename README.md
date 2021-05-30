@@ -27,7 +27,7 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 | `display_name` | `string` | The user's display name. |
 | `avatar` | `string` | The user's avatar URL. |
 | `additional_information` | `string` | The user's additional information. |
-| `group` | `string` | The user's joined group (`none` if none). |
+| `group` | `string` | The user's joined group (`"none"` if none). |
 | `gender` | `string` | The user's gender. |
 | `birth_date` | `string` | The user's birth date. |
 | `joined` | `string` | The user's joined date. |
