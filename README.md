@@ -310,7 +310,33 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 **Response Examples:**
 (Executed with this parameter: `id=108808`)
 ```json
-
+{
+  "display_name": "Nico Levianth",
+  "avatar": "https://i.postimg.cc/RCfX75Gq/ezgif-6-f1553896d410.gif",
+  "additional_info": "\nNico Levianth\nCuồng Dâm\nBắt đầu bộc lộ bản chất dâm tà của mình.\n",
+  "group": "none",
+  "gender": "Nam",
+  "birth_date": "20/2/2005",
+  "joined": "01:18 - 17/05/2018",
+  "comments": 1383,
+  "likes": 2674,
+  "yen": 1811,
+  "introduction": "\n\n\n",
+  "latest_comic": "Watashi ni XXX ga Haete Kita! (Watashi ni Tenshi ga Maiorita!) - Oneshot [Loli]",
+  "tags": [
+    "Catgirls",
+    "Doujinshi",
+    "Full Color",
+    "Futanari",
+    "Incest",
+    "Không che",
+    "Loli",
+    "Oneshot",
+    "Swimsuit",
+    "Yuri"
+  ],
+  "comic_link": "https://hentaivn.tv/19035-doc-truyen-watashi-ni-xxx-ga-haete-kita-watashi-ni-tenshi-ga-maiorita.html"
+}
 ```
 
 ### /GET `GetLatestComic.php`
