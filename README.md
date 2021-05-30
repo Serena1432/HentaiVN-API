@@ -11,9 +11,9 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 
 ## Documentation
 
-### /GET `GetLatestComic.php`
+### /GET `GetFullUserInfo.php`
 
-**Description:** Get 10 latest comics from the website.
+**Description:** Get the information of an user.
 
 **Request Parameters:** JSON, form-urlencoded or queries from URL contains this parameter:
 | Parameter | Type | Description |
