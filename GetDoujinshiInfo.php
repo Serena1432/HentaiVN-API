@@ -1,7 +1,7 @@
 <?php
 
 /*
-	HentaiVN.tv API by Nico Levianth - Getting author info
+	HentaiVN.tv API by Nico Levianth - Getting doujinshi info
 	v1.0
 	Copyright (C) 2016-2021 HentaiVN.net.
 */
@@ -16,7 +16,7 @@ if ($_GET["name"])
 	if (isset($_GET["page"])) $page = "?page=" . $_GET["page"];
 	else $page = "";
 	// Get HTML contents from the website
-    $html = file_get_contents("https://hentaivn.tv/tacgia=" . $_GET["name"] . ".html" . $page);
+    $html = file_get_contents("https://hentaivn.tv/doujin=" . $_GET["name"] . ".html" . $page);
 	// Create objects
     $doc = new DomDocument();
     $info = new stdClass();
@@ -53,7 +53,7 @@ if ($_GET["name"])
 	}
 	else $info->comics = [];
 	// Displaying JSON object
-    if ($info->display_name == null) echo '{"error": "Author is invalid"}';
+    if ($info->display_name == null) echo '{"error": "Doujinshi is invalid"}';
     else
     {
         echo json_encode($info);
@@ -61,6 +61,6 @@ if ($_GET["name"])
 }
 else
 {
-    echo '{"error": "Author Name is invalid"}';
+    echo '{"error": "Doujinshi Name is invalid"}';
 }
 ?>

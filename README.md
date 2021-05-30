@@ -1,5 +1,5 @@
 # HentaiVN API
-This is small API that I made for getting contents from a Vietnamese website called HentaiVN.tv using PHP.
+This is a small API that I made for getting contents from a Vietnamese website called HentaiVN.tv using PHP.
 Currently this API only supports getting contents from this website, not making contents because I don't want to do it.
 
 ## Disclaimer
@@ -274,6 +274,266 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
       ],
       "comic_link": "https://hentaivn.tv/12258-doc-truyen-flanex-touhou-project.html",
       "comic_name": "FLANEX (Touhou Project) - Oneshot"
+    }
+  ]
+}
+```
+
+### /GET `GetDoujinshiInfo.php`
+
+**Description:** Get the full information of an doujinshi.
+
+**Request Parameters:** JSON, form-urlencoded or queries from URL contains this parameter:
+| Parameter | Type | Optional | Description |
+| --- | --- | --- | --- |
+| `name` | `string` | No | The doujinshi name you want to get information |
+| `page` | `string/integer` | Yes | The page number you want to get comics |
+
+**Response Parameters:** An JSON object containing doujinshi information
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `error` | `string` | The API error (`undefined` if none) |
+| `display_name` | `string` | The doujinshi's display name. |
+| `comics` | `array(object)` | The comic list array. |
+| `comics.comic_name` | `string` | The comic name. |
+| `comics.comic_link` | `string` | The link leading to the comic. |
+| `comics.tags` | `array(string)` | Array list of the comic tags. |
+
+**Response Examples:**
+(Executed with this parameter: `name=Love Live!`)
+```json
+{
+  "display_name": "Love Live!",
+  "comics": [
+    {
+      "tags": [
+        "Comedy",
+        "Loli",
+        "Non-hen",
+        "School Uniform",
+        "Sex Toys"
+      ],
+      "comic_link": "https://hentaivn.tv/23605-doc-truyen-sonoda-vibration-love-live.html",
+      "comic_name": "Sonoda Vibration!! (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Anal",
+        "Big Ass",
+        "BlowJobs",
+        "Dark Skin",
+        "Double Penetration",
+        "Drug",
+        "Fingering",
+        "Group",
+        "Mind Break",
+        "Nakadashi",
+        "Rape",
+        "Sex Toys"
+      ],
+      "comic_link": "https://hentaivn.tv/20020-doc-truyen-joshidaisei-kosaka-honoka-no-yaricir-jikenbo-love-live.html",
+      "comic_name": "Joshidaisei Kosaka Honoka no YariCir Jikenbo (Love Live!) - Lâu lâu trồi lên"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/19212-doc-truyen-stardust-melody.html",
+      "comic_name": "Stardust Melody - Thanh tẩy tâm hồn nào"
+    },
+    {
+      "tags": [
+        "Có che",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Stockings",
+        "Twintails"
+      ],
+      "comic_link": "https://hentaivn.tv/18947-doc-truyen-rubykan-love-copybon-love-live-sunshine.html",
+      "comic_name": "RUBYKAN LOVE Copybon (Love Live! Sunshine!!) - Oneshot nhạt"
+    },
+    {
+      "tags": [
+        "Adult",
+        "Breast Sucking",
+        "Doujinshi",
+        "HentaiVN",
+        "Oneshot",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/18554-doc-truyen-bokura-no-love-live-15.html",
+      "comic_name": "Bokura no Love Live! 15 - Oneshot"
+    },
+    {
+      "tags": [
+        "Big Boobs",
+        "Doujinshi",
+        "Full Color",
+        "Harem",
+        "Không che",
+        "SchoolGirl",
+        "X-ray"
+      ],
+      "comic_link": "https://hentaivn.tv/17969-doc-truyen-idol-100-naka-live-love-live.html",
+      "comic_name": "Idol 100% Naka Live! (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Doujinshi",
+        "Fingering",
+        "Kuudere",
+        "Loli",
+        "Masturbation",
+        "Oneshot",
+        "Vanilla",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/17764-doc-truyen-sex-to-uso-to-yurikago-to-love-live.html",
+      "comic_name": "Sex to Uso to Yurikago to (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Anal",
+        "BBM",
+        "Big Boobs",
+        "Big Penis",
+        "BlowJobs",
+        "Condom",
+        "Dark Skin",
+        "Double Penetration",
+        "Group",
+        "Harem",
+        "Mind Break",
+        "Nakadashi",
+        "Virgin"
+      ],
+      "comic_link": "https://hentaivn.tv/17672-doc-truyen-joshidaisei-minami-kotori-no-yaricir-jikenbo-case-4-love-live.html",
+      "comic_name": "Joshidaisei Minami Kotori no YariCir Jikenbo Case.4 (Love Live!) - Hàng về"
+    },
+    {
+      "tags": [
+        "Doujinshi",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/16329-doc-truyen-maki-chan-ga-otoire-o-gaman-suru-ohanashi.html",
+      "comic_name": "Maki-chan ga Otoire o Gaman suru Ohanashi - Oneshot"
+    },
+    {
+      "tags": [
+        "Anal",
+        "Big Boobs",
+        "BlowJobs",
+        "Garter Belts",
+        "Group",
+        "Maids",
+        "Sex Toys",
+        "Stockings"
+      ],
+      "comic_link": "https://hentaivn.tv/16186-doc-truyen-maid-live-love-live.html",
+      "comic_name": "Maid Live! (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Anal",
+        "Big Boobs",
+        "Bondage",
+        "Group",
+        "Hairy",
+        "Mind Break",
+        "Mind Control",
+        "Rape",
+        "Stockings"
+      ],
+      "comic_link": "https://hentaivn.tv/16167-doc-truyen-bad-end-heaven-4-love-live.html",
+      "comic_name": "BAD END HEAVEN 4 (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Cheating",
+        "Có che",
+        "Doujinshi",
+        "Fingering",
+        "Idol",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Rape",
+        "Sex Toys",
+        "Small Boobs",
+        "Stockings"
+      ],
+      "comic_link": "https://hentaivn.tv/15925-doc-truyen-nico-joku-love-live.html",
+      "comic_name": "Nico Joku (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Anal",
+        "BDSM",
+        "Big Boobs",
+        "BlowJobs",
+        "Bondage",
+        "Cheating",
+        "Double Penetration",
+        "Group",
+        "Hairy",
+        "Harem",
+        "Mind Break",
+        "Nakadashi",
+        "NTR",
+        "Sex Toys",
+        "Sweating",
+        "X-ray"
+      ],
+      "comic_link": "https://hentaivn.tv/15813-doc-truyen-joshidaisei-minami-kotori-no-yaricir-jikenbo-case-3-love-live.html",
+      "comic_name": "Joshidaisei Minami Kotori no YariCir Jikenbo Case.3 (Love Live!) - Chap 3 có biến..."
+    },
+    {
+      "tags": [
+        "Blackmail",
+        "BlowJobs",
+        "Double Penetration",
+        "Doujinshi",
+        "Drug",
+        "Group",
+        "Harem",
+        "Mind Break",
+        "Nakadashi",
+        "Rape",
+        "Swimsuit",
+        "X-ray"
+      ],
+      "comic_link": "https://hentaivn.tv/15502-doc-truyen-joshidaisei-minami-kotori-no-yaricir-jikenbo-case-2-love-live.html",
+      "comic_name": "Joshidaisei Minami Kotori no YariCir Jikenbo Case.2 (Love Live!) - Phần 2 nóng cmn hổi :3"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Big Ass",
+        "Big Boobs",
+        "BlowJobs",
+        "Condom",
+        "Deepthroat",
+        "Double Penetration",
+        "Doujinshi",
+        "Group",
+        "Hairy",
+        "Harem",
+        "Mind Break",
+        "Rape",
+        "Stockings"
+      ],
+      "comic_link": "https://hentaivn.tv/15477-doc-truyen-joshidaisei-minami-kotori-no-yaricir-jikenbo-case-1-love-live.html",
+      "comic_name": "Joshidaisei Minami Kotori no YariCir Jikenbo Case.1 (Love Live!) - Oneshot cực hot :3"
     }
   ]
 }
