@@ -11,6 +11,9 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 
 ## Documentation
 ### /GET `GetLatestComic.php`
+
+**Description:** Get 10 latest comics from the website.
+
 **Request Parameters:** None
 
 **Response Parameters:** An JSON array object containing comic list.
@@ -62,6 +65,76 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
   {
     "comic_link": "https://hentaivn.tv/24346-doc-truyen-rem-wa-kyou-zettai-yaritai-re-zero-kara-hajimeru-isekai-seikatsu.html",
     "comic_name": "Rem wa Kyou Zettai Yaritai! (Re:Zero kara Hajimeru Isekai Seikatsu) - Oneshot"
+  }
+]
+```
+
+### /GET `GetLatestTopic.php`
+
+**Description:** Get 10 latest topics from the website forum.
+
+**Request Parameters:** None
+
+**Response Parameters:** An JSON array object containing topic list.
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `topic_type` | `string` | The topic type. |
+| `topic_link` | `string` | The link leading to that HentaiVN Forum Topic. |
+| `topic_name` | `string` | The topic name. |
+
+**Response Examples:**
+(Executed by my computer on May 30, 2021; 5:10 PM (GMT+7))
+```json
+[
+  {
+    "topic_type": "Bounty",
+    "topic_link": "https://hentaivn.tv/forum/t47681-seisai-ryoku-no-takai-7.html#196",
+    "topic_name": "Seisai-ryoku no Takai 7"
+  },
+  {
+    "topic_type": "Tìm truyện",
+    "topic_link": "https://hentaivn.tv/forum/t47680-tan-the.html#710",
+    "topic_name": "Tận thế!"
+  },
+  {
+    "topic_type": "Danh Hiệu",
+    "topic_link": "https://hentaivn.tv/forum/t42076-trao-tang-danh-hieu-bbcon-cho-akai.html#980",
+    "topic_name": "Trao tặng Danh Hiệu \"BBcon\" cho Akai"
+  },
+  {
+    "topic_type": "Thảo luận",
+    "topic_link": "https://hentaivn.tv/forum/t47668-ngung-dang-anh-18--de-hentaivn-khong-bi-chan.html#341",
+    "topic_name": "Ngừng Đăng Ảnh 18+ Để HentaiVN Không Bị Chặn!"
+  },
+  {
+    "topic_type": "Waifu",
+    "topic_link": "https://hentaivn.tv/forum/t47679-ban-trung-xanh-sieu-dep-re-hon-lan-trc-toi-400-yen-.html#487",
+    "topic_name": "Bán trứng xanh siêu đẹp, rẻ hơn lần trc tới 400 yên"
+  },
+  {
+    "topic_type": "Hình Ảnh 18+",
+    "topic_link": "https://hentaivn.tv/forum/t40466-xa-kho-part-2-.html#619",
+    "topic_name": "Xả kho part 2"
+  },
+  {
+    "topic_type": "Mua bán/Hợp tác",
+    "topic_link": "https://hentaivn.tv/forum/t47662-can-editor-pzo.html#653",
+    "topic_name": "cần editor pzo"
+  },
+  {
+    "topic_type": "Hình Ảnh 18+",
+    "topic_link": "https://hentaivn.tv/forum/t46341-lan-dau-gop-vui-cho-anh-em.html#507",
+    "topic_name": "Lần đầu góp vui cho anh em"
+  },
+  {
+    "topic_type": "Bounty",
+    "topic_link": "https://hentaivn.tv/forum/t46975-chinpou-ni-ai-o-komete.html#430",
+    "topic_name": "Chinpou ni Ai o Komete"
+  },
+  {
+    "topic_type": "Hình Ảnh 18+",
+    "topic_link": "https://hentaivn.tv/forum/t47558-bac-nao-co-may-anh-chay-nuoc-giong-kia-thi-cho-tui-voi.html#299",
+    "topic_name": "Bác nào có mấy ảnh chảy nước giống kia thì cho tụi với"
   }
 ]
 ```
