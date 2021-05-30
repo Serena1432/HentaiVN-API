@@ -67,13 +67,13 @@ if ($_GET["id"])
 			{
 				$tags = $finder->query("//*[contains(@class, 'item remove_')][1]//div[contains(@class, 'box-description')][1]//p//span//a[contains(@class, 'tag')][1]");
 			}
-			$tagString = "";
-			for ($i = 0;$i < count($tags);$i++)
+			$tagsArr = [];
+			for ($i = 0; $i < count($tags);$i++)
 			{
-				$tagString = $tagString . '' . $tags[$i]->textContent . ', ';
+				array_push($tagsArr, $tags[$i]->textContent);
 			}
             $info->latest_comic = substr($comic_list[0]->textContent, 1);
-            $info->tags = substr($tagString, 0, strlen($tagString) - 2);
+            $info->tags = $tagsArr;
             $info->comic_link = "https://hentaivn.tv" . $finder->evaluate("string(//*[contains(@class, 'item remove_')]//div[contains(@class, 'box-description')]//h2//a/@href)");
         }
 		// Return the JSON object
