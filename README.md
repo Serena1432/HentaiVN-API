@@ -16,7 +16,7 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 **Response Parameters:** An JSON array object containing comic list.
 | Parameter | Type | Description |
 | --- | --- | --- |
-| `comic_link` | `string` | The link leading to the HentaiVN Comic URL. |
+| `comic_link` | `string` | The link leading to that HentaiVN Comic. |
 | `comic_name` | `string` | The comic name. |
 
 **Response Examples:**
