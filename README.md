@@ -12,6 +12,7 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 ## Documentation
 ### /GET `GetLatestComic.php`
 **Request Parameters:** None
+
 **Response Parameters:** An JSON array object containing comic list.
 | Parameter | Type | Description |
 | --- | --- | --- |
