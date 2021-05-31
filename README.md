@@ -1028,7 +1028,7 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
 ]
 ```
 
-### /GET `GetAuthorInfo.php`
+### /GET `GetSearchResults.php`
 
 **Description:** Get the full information of an author.
 
