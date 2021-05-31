@@ -1027,3 +1027,296 @@ If anyone have an issue about this, feel free to post in the [Issues](https://gi
   }
 ]
 ```
+
+### /GET `GetAuthorInfo.php`
+
+**Description:** Get the full information of an author.
+
+**Request Parameters:** JSON, form-urlencoded or queries from URL contains this parameter:
+| Parameter | Type | Optional | Description |
+| --- | --- | --- | --- |
+| `query` | `string` | No | The search query string |
+| `page` | `string/integer` | Yes | The page number you want to search for |
+
+**Response Parameters:** An JSON object containing author information
+| Parameter | Type | Description |
+| --- | --- | --- |
+| `error` | `string` | The API error (`undefined` if none) |
+| `display_name` | `string` | Search result's display name to ensure that no error happens. |
+| `comics` | `array(object)` | The comic list array. |
+| `comics.comic_name` | `string` | The comic name. |
+| `comics.comic_link` | `string` | The link leading to the comic. |
+| `comics.tags` | `array(string)` | Array list of the comic tags. |
+
+**Response Examples:**
+(Executed with this parameter: `query=Nico`)
+```json
+{
+  "display_name": "Nico",
+  "comics": [
+    {
+      "tags": [
+        "Brother",
+        "Che nhiều",
+        "Có che",
+        "Doujinshi",
+        "Fingering",
+        "Imouto",
+        "Loli",
+        "Oneshot",
+        "Pantyhose",
+        "School Uniform",
+        "SchoolGirl",
+        "Sex Toys",
+        "Small Boobs",
+        "Twintails",
+        "Vanilla"
+      ],
+      "comic_link": "https://hentaivn.tv/23541-doc-truyen-unicorn-da-lam-het-suc-ngay-ca-khi-o-trong-khach-san.html",
+      "comic_name": "Unicorn, đã làm hết sức, ngay cả khi ở trong khách sạn - Oneshot"
+    },
+    {
+      "tags": [
+        "BlowJobs",
+        "Cunnilingus",
+        "Doujinshi",
+        "Femdom",
+        "HentaiVN",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Pantyhose",
+        "Pregnant",
+        "Yandere"
+      ],
+      "comic_link": "https://hentaivn.tv/22305-doc-truyen-together-with-unicorn-azur-lane.html",
+      "comic_name": "Together with Unicorn (Azur Lane) - Oneshot"
+    },
+    {
+      "tags": [
+        "BlowJobs",
+        "Che ít",
+        "Cunnilingus",
+        "Doujinshi",
+        "Loli",
+        "Oneshot",
+        "Oral",
+        "Small Boobs",
+        "Stockings",
+        "Virgin",
+        "X-ray"
+      ],
+      "comic_link": "https://hentaivn.tv/18219-doc-truyen-tottemo-waruiko-unicorn-azur-lane.html",
+      "comic_name": "Tottemo Waruiko Unicorn (Azur Lane) - Oneshot"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Brocon",
+        "Brother",
+        "Doujinshi",
+        "Loli",
+        "Oneshot",
+        "Sister",
+        "Stockings",
+        "Twintails",
+        "Vanilla"
+      ],
+      "comic_link": "https://hentaivn.tv/15954-doc-truyen-unicorn-yeu-onii-chan-nhieu-lam-azur-lane.html",
+      "comic_name": "Unicorn yêu Onii-chan nhiều lắm! (Azur Lane) - Oneshot ngắn"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "Cheating",
+        "Có che",
+        "Doujinshi",
+        "Fingering",
+        "Idol",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Rape",
+        "Sex Toys",
+        "Small Boobs",
+        "Stockings"
+      ],
+      "comic_link": "https://hentaivn.tv/15925-doc-truyen-nico-joku-love-live.html",
+      "comic_name": "Nico Joku (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Anal",
+        "BlowJobs",
+        "Cosplay",
+        "Doujinshi",
+        "Fingering",
+        "Full Color",
+        "Harem",
+        "HentaiVN",
+        "Idol",
+        "Không che",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Oral",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Swimsuit"
+      ],
+      "comic_link": "https://hentaivn.tv/14868-doc-truyen-ki-nghi-he-cua-nico-va-maki-love-live.html",
+      "comic_name": "Kì nghỉ hè của Nico và Maki (Love Live!) - Oneshot (Full-Màu)"
+    },
+    {
+      "tags": [
+        "Ahegao",
+        "BlowJobs",
+        "Che ít",
+        "Doujinshi",
+        "Group",
+        "Loli",
+        "Mind Control",
+        "Nakadashi",
+        "Oneshot",
+        "Rape",
+        "Small Boobs",
+        "Stockings",
+        "Virgin"
+      ],
+      "comic_link": "https://hentaivn.tv/13920-doc-truyen-nico-live-love-live.html",
+      "comic_name": "Nico-Live! (Love Live!) - Oneshot"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Doujinshi",
+        "Fingering",
+        "Oneshot",
+        "Small Boobs",
+        "Stockings",
+        "Vanilla"
+      ],
+      "comic_link": "https://hentaivn.tv/13901-doc-truyen-unicorn-ecchi-azur-lane.html",
+      "comic_name": "Unicorn Ecchi (Azur Lane) - One shot"
+    },
+    {
+      "tags": [
+        "Anal",
+        "Big Penis",
+        "BlowJobs",
+        "Che ít",
+        "Cheating",
+        "Double Penetration",
+        "Doujinshi",
+        "GangBang",
+        "Group",
+        "Handjob",
+        "Mind Break",
+        "Nakadashi",
+        "NTR",
+        "Oneshot",
+        "Oral",
+        "Pregnant",
+        "Rape",
+        "Small Boobs",
+        "Stockings",
+        "Virgin"
+      ],
+      "comic_link": "https://hentaivn.tv/13900-doc-truyen-toi-muon-bat-nat-mot-be-unicorn-trong-trang-azur-lane.html",
+      "comic_name": "Tôi muốn bắt nạt một bé Unicorn trong trắng (Azur Lane) - One shot"
+    },
+    {
+      "tags": [
+        "BlowJobs",
+        "Che ít",
+        "Full Color",
+        "Group",
+        "Oneshot",
+        "Oral",
+        "Rape"
+      ],
+      "comic_link": "https://hentaivn.tv/11282-doc-truyen-nicopoppy-kamen-rider-ex-aid.html",
+      "comic_name": "NicoPoppy (Kamen Rider Ex-Aid) - Oneshot"
+    },
+    {
+      "tags": [
+        "Anal",
+        "BlowJobs",
+        "Catgirls",
+        "Che ít",
+        "Double Penetration",
+        "GangBang",
+        "Loli",
+        "Oneshot",
+        "Sex Toys"
+      ],
+      "comic_link": "https://hentaivn.tv/2073-doc-truyen-leaving-the-school-festival.html",
+      "comic_name": "Leaving the School Festival - Oneshot"
+    },
+    {
+      "tags": [
+        "BlowJobs",
+        "Che nhiều",
+        "Doujinshi",
+        "Loli",
+        "Nakadashi",
+        "Oneshot",
+        "Romance",
+        "Small Boobs"
+      ],
+      "comic_link": "https://hentaivn.tv/10966-doc-truyen-unicorn-no-uni-o-corn-shitai-azur-lane.html",
+      "comic_name": "Unicorn no Uni o Corn Shitai!! (Azur Lane) - Oneshot"
+    },
+    {
+      "tags": [
+        "Big Boobs",
+        "Che ít",
+        "Doujinshi",
+        "Full Color",
+        "Oneshot",
+        "Romance",
+        "Virgin"
+      ],
+      "comic_link": "https://hentaivn.tv/10359-doc-truyen-vuong-mien-toi-loi.html",
+      "comic_name": "Vương Miện Tội Lỗi - Full màu"
+    },
+    {
+      "tags": [
+        "Che ít",
+        "Doujinshi",
+        "Fingering",
+        "Group",
+        "HentaiVN",
+        "Idol",
+        "Loli",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/9545-doc-truyen-nicomaki-triangle-revenge-love-live.html",
+      "comic_name": "NicoMaki Triangle Revenge (Love Live!) - One shot- [Yuri]"
+    },
+    {
+      "tags": [
+        "Che nhiều",
+        "Doujinshi",
+        "Fingering",
+        "HentaiVN",
+        "Idol",
+        "Loli",
+        "Oneshot",
+        "School Uniform",
+        "SchoolGirl",
+        "Small Boobs",
+        "Stockings",
+        "Yuri"
+      ],
+      "comic_link": "https://hentaivn.tv/9072-doc-truyen-nicomaki-kanshou-party-love-live.html",
+      "comic_name": "NicoMaki Kanshou Party (Love Live!) - Oneshot [Yuri]"
+    }
+  ]
+}
+```
