@@ -1,3 +1,5 @@
+**This API is deprecated and won't be updated anymore. Please use my new API called [Touwa](https://www.github.com/LilShieru/Touwa) which is also an API getting information from the HentaiVN website.**
+
 # HentaiVN API
 This is a small API that I made for getting contents from a Vietnamese website called HentaiVN.tv using PHP.
 Currently this API only supports getting contents from this website, not making contents because I don't want to do it.
